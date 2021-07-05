@@ -3,3 +3,502 @@
  * Import this file using the following HTML or equivalent:*/
 
 @import "_base.scss";
+
+html{
+	@include min-width(320px);
+	max-width:2000px;
+	margin:0 auto;
+	overflow-x:hidden;
+
+}
+body {
+	@include adjust-font-size-to(14px);
+	font-family:'gothic';
+	background:$blue_color;
+	color:$white_color;
+	font-weight:normal;
+	@include min-width(320px);
+}
+h1 {@include adjust-font-size-to(40px);}
+h2 {@include adjust-font-size-to(28px);}
+h3 {@include adjust-font-size-to(24px);}
+h4 {@include adjust-font-size-to(18px);}
+h5 {@include adjust-font-size-to(14px);}
+p {@include adjust-font-size-to(14px);margin: 1.5rem 0;}
+.row{
+	margin-left:0;
+	margin-right:0;
+}
+.container-fluid{
+	padding-left:0;
+	padding-right:0;
+}
+.content-width{
+	max-width:$max_content_width;
+	display:block;
+	margin:0 auto;
+	padding-left:15px;
+	padding-right:15px;
+}
+img{
+	max-width:100%;
+	height:auto;
+	margin-bottom:1em;
+}
+a{
+	font-family:inherit;
+	text-decoration:none;
+	color:$white_color;
+	&:hover{
+		text-decoration:none!important;
+		color:$golden_color;
+	}
+}
+a:focus, a:hover{
+	text-decoration:initial;
+}
+.bold{
+	font-weight:bold;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  background-color: $green_color;
+  border-radius:0;
+  border:1px solid $white_color;
+  padding:10px 48px;
+  font-size:24px;
+}
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background-color: $golden_color;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{
+	padding-left:0;
+	padding-right:0;
+}
+/*Icons section*/
+.icon{
+	height:24px;
+	width:24px;
+	background-size:100%;
+	background-repeat:no-repeat;
+	display:inline-block;
+	margin-left:12px;
+	&.icon-plan{
+		background:url("../img/airplaneIcon.png");
+	}
+	&.icon-check{
+		background:url("../img/okIcon.png");
+	}
+	&.icon-right-arrow{
+		display: block;
+	    float: right;
+	    background: url("../img/rightArrow.png");
+	    width: 20px;
+	    height: 80px;
+	    background-size: 100% 100%;
+	    background-repeat: no-repeat;
+	}
+	&.icon-question{
+		background:url("../img/question.png") no-repeat;
+		width:28px;
+		height:20px;
+		background-size:contain;
+	}
+	&.icon-language{
+		background:url("../img/americanFlag.png") no-repeat;
+		width:28px;
+		height:20px;
+		background-size:100% 100%;
+	}
+	&.icon-message{
+		background:url("../img/messageIcon.png") no-repeat;
+		width:28px;
+		height:20px;
+		background-size:contain;
+	}
+	&.icon-edit-plans{
+		background:url("../img/EditPlans.png") no-repeat;
+		width: 30px;
+	    height: 38px;
+	    background-size: contain;
+	    margin-top: 4px;
+	}
+	&.icon-signup{
+		background:url("../img/signIn.png") no-repeat;
+		width:20px;
+		height:20px;
+		background-size:contain;
+	}
+	&.icon-down{
+		background:url("../img/downArrow.png") no-repeat;
+		display:block;
+		clear:both;
+		margin:0 auto;
+		width:10px;
+		height:6px;
+	}
+}
+/*Top Bar styles*/
+.topBar{
+	background:$green_color;
+	text-align:right;
+	height:auto;
+	.task{
+		display: inline;
+	    line-height: 38px;
+	    padding-right: 8px;
+	}
+}
+.navBar{
+	ul{
+		padding-left:0;
+		li{
+			list-style:none;
+			float:left;
+		    margin: 18px 24px 16px 0;
+		    font-size: 16px;
+		}
+	}
+}
+.logoBar{
+	background:url("../img/TitlebackGround.jpg");
+	background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    .logoContainer{
+    	display:inline-block;
+    	& h1{
+		    margin: 0;
+		    padding: 18px 0;
+		    @media($verysmall_screen){
+		    	padding:12px 0;
+		    }		    
+    	}
+    	& h3{
+		    margin: 0;
+		    padding: 24px 0;
+		    @media($verysmall_screen){
+		    	padding:12px 0;
+		    	margin:6px;
+		    	line-height: 1.2;
+		    }
+    	}
+    }
+    .taglineContainer{
+    	display:inline-block;
+    	float:right;
+    }
+}
+/*Deals section*/
+.dealsSection{
+	margin-bottom:$standard_bottom_margin;
+	.dealsEntry{
+		text-align:center;
+		margin-bottom:38px;
+	}
+	.find-deals{
+		display:block;
+		clear:both;
+		margin:0 auto;
+		margin-top:30px;
+		margin-bottom:20px;
+	}
+	.form-control{
+		width:98%;
+	}
+	.form-group{
+		margin-bottom:30px;
+		select.form-control{
+				width: 74%;
+	    		margin-left: 11%;
+		}
+	}
+	div.box,.checkbox{
+		border:1px solid $white_color;
+		padding:6px;
+		display:inline;
+	}
+}
+
+/*Showcase section*/
+.showcaseSection{
+	margin-bottom:$standard_bottom_margin;
+}
+.destSection{
+	.destContainer{
+		border:1px solid $green_color;
+		display:block;
+		margin-bottom:10px;
+		padding:8px;
+		overflow:auto;
+		.cityCountry{
+		    max-width: 85%;
+	    	float: left;
+		}
+		.details{
+			@media(max-width:500px){
+				display:block;
+				clear:both;
+			}
+		}
+		img{
+			display:block;
+			float:left;
+			margin-right:8px;
+			margin-bottom:0;
+			max-width:114px;
+		}
+		.pull-right img{
+			margin-top:16px;
+		}
+		h3{
+			display:inline;
+		}
+		h4{
+			margin:0;
+		}
+	}
+}
+.clientOffersSection,.destSection{
+	max-width:49%;
+	@media($verysmall_screen){
+		max-width:100%;
+	}
+}
+.clientOffersSection{
+	margin-right:2%;
+	@media($verysmall_screen){
+		margin-right:0;
+	}
+}
+.happyGuestContainer{
+	margin-bottom:$standard_bottom_margin;
+	background:$green_color;
+	border:2px solid $green_color;
+	 @include border-radius(12px);
+	h3{
+		margin-top:10px;
+		margin-left:10px;
+	}
+	.guestLog{
+		background:$blue_color;
+		display:block;
+		padding:12px 10px 24px 10px;
+		@include border-radius(12px);
+	}
+	.singleLog{
+		display:block;
+		padding:8px;
+		background:$green_color;
+		margin-bottom:10px;
+		&:last-of-type{
+			margin-bottom:0;
+		}
+		img{
+			max-width:74px;
+			float:left;
+			display:block;
+			margin-right:8px;
+		}
+	}
+}
+.hereForYouContaianer{
+	background:$green_color;
+	border:2px solid $green_color;
+	@include border-radius(12px);
+	margin-bottom:$standard_bottom_margin;
+	h3{
+		margin-top:10px;
+		margin-left:10px;
+	}
+	.serviceLog{
+		background:$blue_color;
+		@include border-radius(12px);
+		display:block;
+		padding:30px 10px 10px 10px;
+	}
+	.singleServiceLog{
+		border-bottom:2px solid $green_color;
+		padding:12px;
+		&:last-of-type{
+			border-bottom:18px solid $green_color;
+		}
+		.serviceHeading{
+			font-size: 18px;
+		}
+	}
+}
+
+/*Featured trips section*/
+.featuredTrips{
+	margin-bottom:$standard_bottom_margin;
+	.tripBackground{
+		background:url("../../images/ExploreImage.jpg") no-repeat;
+		padding-top:12px;
+	    padding-bottom: 10em;
+    	background-size: cover;
+	}
+	h3{
+		line-height: 1.5em;
+	    margin: 0;
+	    padding: 0 6px;
+	    background: $green_color;
+	    width: auto;
+	    display: inline-block;
+	    font-size: 36px;
+	    font-weight: normal;
+	}
+	p.tagline{
+		margin:6px;
+		color:$blue_color;
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom:30px;
+	}
+	.tripsTags{
+		background:$green_color;
+		padding: 14px 24px;
+		@include border-radius(12px);
+    	@include float(right);
+    	margin-right: 4%;
+    	margin-bottom:4em;
+	@media ($verysmall_screen){
+		@include reset-float(inline-block);
+		margin:0 auto;
+		border-radius:0;
+	}
+		p{
+			color:$white_color;
+			line-height: 24px;
+			font-size: 16px;
+			margin:0;
+		}
+	}
+}
+
+/*Featured destinations styles*/
+.reviewsSection,.featuredDestinations{
+	margin-bottom:$standard_bottom_margin;
+	.reviewTab{
+		padding:0;
+		.item{
+		    display: inline;
+		    float: left;
+		    padding: 16px 0px 0 0;
+		    @include min-width(212px);
+			.item-title{
+				display:block;
+			}
+			.item-value{
+				display:block;
+			}
+		}
+	}
+}
+
+/*Discover Section styles*/
+.discoverSection{
+	text-align:center;
+	.discovery{
+		margin-right:26px;
+		text-align:center;
+		display:inline-block;
+		overflow:hidden;
+		&:last-of-type{
+    		margin-right:0;
+    	}
+    	@media(max-width:484px){
+    		margin:4px;
+    	}
+    	span{
+    		display:block;
+    		clear:both;
+    		float:none;
+    	}
+		img{
+			border:2px solid $green_color;
+			width: 190px;
+			height:145px;
+	    	overflow: hidden;
+	    	float: none;
+	    	clear: both;
+	    	display: inline-block;
+    	}
+	}
+
+	&>h4{
+		font-weight: 700;
+		text-align:left;
+	}
+}
+
+/*Footer Styles Here*/
+footer{
+	margin-top:92px;
+	padding-bottom:8em;
+	.siteMapnSubs{
+		overflow:hidden;
+		background:$green_color;
+		padding:44px 15px;
+		margin-bottom:92px;
+		.siteMap{
+			ul{
+				display:inline;
+				float:left;
+				margin:0 0 40px 0;
+				width:160px;
+				padding-right:20px;
+				li{
+					list-style: none;
+				}
+			}
+		}
+		.subscriptionContainer{
+			width: auto;
+		    display: inline-block;
+		    h3{
+		    	@include adjust-font-size-to(18px);
+		    	margin:0 0 10px 0;
+		    }
+		    p{
+		    	margin:0 0 10px 0;
+		    }
+		    button{
+		    	    float: right;
+				    font-size: 18px;
+				    border-radius: 0;
+		    }
+		    input{
+		    	border-radius:0;
+		    }
+		}
+	}
+
+	/*Footer Social Section*/
+	.footerSocial{
+		&>h2{
+			@include adjust-font-size-to(30px);
+			font-weight: 700;
+		}
+		text-align:center;
+		div.socialIcons{
+			ul{
+				padding:0;
+				li{
+					list-style: none;
+					display:inline;
+				}
+
+			} 
+		}
+	}
+}

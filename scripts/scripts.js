@@ -26,4 +26,18 @@ $(function() {
             }
         }
     });
+
+
+    //activate jquery tabs
+    $( ".tabs" ).tabs();
+
+    $('#mainSlider').skdslider({
+        delay:5000,
+        animationSpeed: 800,
+        showNextPrev:false,
+        showPlayButton:false,
+        autoSlide:true,
+        animationType:'fading',
+        pauseOnHover:false
+    });
 });

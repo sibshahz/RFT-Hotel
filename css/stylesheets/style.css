@@ -3,6 +3,696 @@
  * Import this file using the following HTML or equivalent:*/
 @font-face {
   font-family: 'gothic';
-  src: url("../gothic.eot");
-  src: local("gothic"), url("../gothic.woff") format("woff"), url("../gothic.ttf") format("truetype");
+  src: url("../font/gothic.eot");
+  src: local("../font/gothic"), url("../font/gothic.woff") format("woff"), url("../font/gothic.ttf") format("truetype");
+}
+
+/* line 61, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 87.5%;
+}
+
+/* line 64, C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 14px;
+  line-height: 1.71429em;
+}
+
+/* line 7, ../sass/style.scss */
+html {
+  min-width: 320px;
+  width: auto !important;
+  width: 320px;
+  max-width: 2000px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+/* line 14, ../sass/style.scss */
+body {
+  font-size: 1em;
+  line-height: 1.71429em;
+  font-family: 'gothic';
+  background: #2f6395;
+  color: white;
+  font-weight: normal;
+  min-width: 320px;
+  width: auto !important;
+  width: 320px;
+}
+
+/* line 22, ../sass/style.scss */
+h1 {
+  font-size: 2.85714em;
+  line-height: 1.2em;
+}
+
+/* line 23, ../sass/style.scss */
+h2 {
+  font-size: 2em;
+  line-height: 1.28571em;
+}
+
+/* line 24, ../sass/style.scss */
+h3 {
+  font-size: 1.71429em;
+  line-height: 1.5em;
+}
+
+/* line 25, ../sass/style.scss */
+h4 {
+  font-size: 1.28571em;
+  line-height: 1.33333em;
+}
+
+/* line 26, ../sass/style.scss */
+h5 {
+  font-size: 1em;
+  line-height: 1.71429em;
+}
+
+/* line 27, ../sass/style.scss */
+p {
+  font-size: 1em;
+  line-height: 1.71429em;
+  margin: 1.5rem 0;
+}
+
+/* line 28, ../sass/style.scss */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 32, ../sass/style.scss */
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 36, ../sass/style.scss */
+.content-width {
+  max-width: 1110px;
+  display: block;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 43, ../sass/style.scss */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+/* line 48, ../sass/style.scss */
+a {
+  font-family: inherit;
+  text-decoration: none;
+  color: white;
+}
+/* line 52, ../sass/style.scss */
+a:hover {
+  text-decoration: none!important;
+  color: #dbd240;
+}
+
+/* line 57, ../sass/style.scss */
+a:focus, a:hover {
+  text-decoration: initial;
+}
+
+/* line 60, ../sass/style.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 66, ../sass/style.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  background-color: #8fa831;
+  border-radius: 0;
+  border: 1px solid white;
+  padding: 10px 48px;
+  font-size: 24px;
+}
+
+/* line 80, ../sass/style.scss */
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background-color: #dbd240;
+}
+
+/* line 83, ../sass/style.scss */
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*Icons section*/
+/* line 88, ../sass/style.scss */
+.icon {
+  height: 24px;
+  width: 24px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-left: 12px;
+}
+/* line 95, ../sass/style.scss */
+.icon.icon-plan {
+  background: url("../img/airplaneIcon.png");
+}
+/* line 98, ../sass/style.scss */
+.icon.icon-check {
+  background: url("../img/okIcon.png");
+}
+/* line 101, ../sass/style.scss */
+.icon.icon-right-arrow {
+  display: block;
+  float: right;
+  background: url("../img/rightArrow.png");
+  width: 20px;
+  height: 80px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/* line 110, ../sass/style.scss */
+.icon.icon-question {
+  background: url("../img/question.png") no-repeat;
+  width: 28px;
+  height: 20px;
+  background-size: contain;
+}
+/* line 116, ../sass/style.scss */
+.icon.icon-language {
+  background: url("../img/americanFlag.png") no-repeat;
+  width: 28px;
+  height: 20px;
+  background-size: 100% 100%;
+}
+/* line 122, ../sass/style.scss */
+.icon.icon-message {
+  background: url("../img/messageIcon.png") no-repeat;
+  width: 28px;
+  height: 20px;
+  background-size: contain;
+}
+/* line 128, ../sass/style.scss */
+.icon.icon-edit-plans {
+  background: url("../img/EditPlans.png") no-repeat;
+  width: 30px;
+  height: 38px;
+  background-size: contain;
+  margin-top: 4px;
+}
+/* line 135, ../sass/style.scss */
+.icon.icon-signup {
+  background: url("../img/signIn.png") no-repeat;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+}
+/* line 141, ../sass/style.scss */
+.icon.icon-down {
+  background: url("../img/downArrow.png") no-repeat;
+  display: block;
+  clear: both;
+  margin: 0 auto;
+  width: 10px;
+  height: 6px;
+}
+
+/*Top Bar styles*/
+/* line 151, ../sass/style.scss */
+.topBar {
+  background: #8fa831;
+  text-align: right;
+  height: auto;
+}
+/* line 155, ../sass/style.scss */
+.topBar .task {
+  display: inline;
+  line-height: 38px;
+  padding-right: 8px;
+}
+
+/* line 162, ../sass/style.scss */
+.navBar ul {
+  padding-left: 0;
+}
+/* line 164, ../sass/style.scss */
+.navBar ul li {
+  list-style: none;
+  float: left;
+  margin: 18px 24px 16px 0;
+  font-size: 16px;
+}
+
+/* line 172, ../sass/style.scss */
+.logoBar {
+  background: url("../img/TitlebackGround.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+/* line 177, ../sass/style.scss */
+.logoBar .logoContainer {
+  display: inline-block;
+}
+/* line 179, ../sass/style.scss */
+.logoBar .logoContainer h1 {
+  margin: 0;
+  padding: 18px 0;
+}
+@media (max-width: 767px) {
+  /* line 179, ../sass/style.scss */
+  .logoBar .logoContainer h1 {
+    padding: 12px 0;
+  }
+}
+/* line 186, ../sass/style.scss */
+.logoBar .logoContainer h3 {
+  margin: 0;
+  padding: 24px 0;
+}
+@media (max-width: 767px) {
+  /* line 186, ../sass/style.scss */
+  .logoBar .logoContainer h3 {
+    padding: 12px 0;
+    margin: 6px;
+    line-height: 1.2;
+  }
+}
+/* line 196, ../sass/style.scss */
+.logoBar .taglineContainer {
+  display: inline-block;
+  float: right;
+}
+
+/*Deals section*/
+/* line 202, ../sass/style.scss */
+.dealsSection {
+  margin-bottom: 80px;
+}
+/* line 204, ../sass/style.scss */
+.dealsSection .dealsEntry {
+  text-align: center;
+  margin-bottom: 38px;
+}
+/* line 208, ../sass/style.scss */
+.dealsSection .find-deals {
+  display: block;
+  clear: both;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+/* line 215, ../sass/style.scss */
+.dealsSection .form-control {
+  width: 98%;
+}
+/* line 218, ../sass/style.scss */
+.dealsSection .form-group {
+  margin-bottom: 30px;
+}
+/* line 220, ../sass/style.scss */
+.dealsSection .form-group select.form-control {
+  width: 74%;
+  margin-left: 11%;
+}
+/* line 225, ../sass/style.scss */
+.dealsSection div.box, .dealsSection .checkbox {
+  border: 1px solid white;
+  padding: 6px;
+  display: inline;
+}
+
+/*Showcase section*/
+/* line 233, ../sass/style.scss */
+.showcaseSection {
+  margin-bottom: 80px;
+}
+
+/* line 237, ../sass/style.scss */
+.destSection .destContainer {
+  border: 1px solid #8fa831;
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px;
+  overflow: auto;
+}
+/* line 243, ../sass/style.scss */
+.destSection .destContainer .cityCountry {
+  max-width: 85%;
+  float: left;
+}
+@media (max-width: 500px) {
+  /* line 247, ../sass/style.scss */
+  .destSection .destContainer .details {
+    display: block;
+    clear: both;
+  }
+}
+/* line 253, ../sass/style.scss */
+.destSection .destContainer img {
+  display: block;
+  float: left;
+  margin-right: 8px;
+  margin-bottom: 0;
+  max-width: 114px;
+}
+/* line 260, ../sass/style.scss */
+.destSection .destContainer .pull-right img {
+  margin-top: 16px;
+}
+/* line 263, ../sass/style.scss */
+.destSection .destContainer h3 {
+  display: inline;
+}
+/* line 266, ../sass/style.scss */
+.destSection .destContainer h4 {
+  margin: 0;
+}
+
+/* line 271, ../sass/style.scss */
+.clientOffersSection, .destSection {
+  max-width: 49%;
+}
+@media (max-width: 767px) {
+  /* line 271, ../sass/style.scss */
+  .clientOffersSection, .destSection {
+    max-width: 100%;
+  }
+}
+
+/* line 277, ../sass/style.scss */
+.clientOffersSection {
+  margin-right: 2%;
+}
+@media (max-width: 767px) {
+  /* line 277, ../sass/style.scss */
+  .clientOffersSection {
+    margin-right: 0;
+  }
+}
+
+/* line 283, ../sass/style.scss */
+.happyGuestContainer {
+  margin-bottom: 80px;
+  background: #8fa831;
+  border: 2px solid #8fa831;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+}
+/* line 288, ../sass/style.scss */
+.happyGuestContainer h3 {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+/* line 292, ../sass/style.scss */
+.happyGuestContainer .guestLog {
+  background: #2f6395;
+  display: block;
+  padding: 12px 10px 24px 10px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+}
+/* line 298, ../sass/style.scss */
+.happyGuestContainer .singleLog {
+  display: block;
+  padding: 8px;
+  background: #8fa831;
+  margin-bottom: 10px;
+}
+/* line 303, ../sass/style.scss */
+.happyGuestContainer .singleLog:last-of-type {
+  margin-bottom: 0;
+}
+/* line 306, ../sass/style.scss */
+.happyGuestContainer .singleLog img {
+  max-width: 74px;
+  float: left;
+  display: block;
+  margin-right: 8px;
+}
+
+/* line 314, ../sass/style.scss */
+.hereForYouContaianer {
+  background: #8fa831;
+  border: 2px solid #8fa831;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  margin-bottom: 80px;
+}
+/* line 319, ../sass/style.scss */
+.hereForYouContaianer h3 {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+/* line 323, ../sass/style.scss */
+.hereForYouContaianer .serviceLog {
+  background: #2f6395;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  display: block;
+  padding: 30px 10px 10px 10px;
+}
+/* line 329, ../sass/style.scss */
+.hereForYouContaianer .singleServiceLog {
+  border-bottom: 2px solid #8fa831;
+  padding: 12px;
+}
+/* line 332, ../sass/style.scss */
+.hereForYouContaianer .singleServiceLog:last-of-type {
+  border-bottom: 18px solid #8fa831;
+}
+/* line 335, ../sass/style.scss */
+.hereForYouContaianer .singleServiceLog .serviceHeading {
+  font-size: 18px;
+}
+
+/*Featured trips section*/
+/* line 342, ../sass/style.scss */
+.featuredTrips {
+  margin-bottom: 80px;
+}
+/* line 344, ../sass/style.scss */
+.featuredTrips .tripBackground {
+  background: url("../../images/ExploreImage.jpg") no-repeat;
+  padding-top: 12px;
+  padding-bottom: 10em;
+  background-size: cover;
+}
+/* line 350, ../sass/style.scss */
+.featuredTrips h3 {
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0 6px;
+  background: #8fa831;
+  width: auto;
+  display: inline-block;
+  font-size: 36px;
+  font-weight: normal;
+}
+/* line 360, ../sass/style.scss */
+.featuredTrips p.tagline {
+  margin: 6px;
+  color: #2f6395;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+/* line 367, ../sass/style.scss */
+.featuredTrips .tripsTags {
+  background: #8fa831;
+  padding: 14px 24px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  display: inline;
+  float: right;
+  margin-right: 4%;
+  margin-bottom: 4em;
+}
+@media (max-width: 767px) {
+  /* line 367, ../sass/style.scss */
+  .featuredTrips .tripsTags {
+    float: none;
+    display: inline-block;
+    margin: 0 auto;
+    border-radius: 0;
+  }
+}
+/* line 379, ../sass/style.scss */
+.featuredTrips .tripsTags p {
+  color: white;
+  line-height: 24px;
+  font-size: 16px;
+  margin: 0;
+}
+
+/*Featured destinations styles*/
+/* line 389, ../sass/style.scss */
+.reviewsSection, .featuredDestinations {
+  margin-bottom: 80px;
+}
+/* line 391, ../sass/style.scss */
+.reviewsSection .reviewTab, .featuredDestinations .reviewTab {
+  padding: 0;
+}
+/* line 393, ../sass/style.scss */
+.reviewsSection .reviewTab .item, .featuredDestinations .reviewTab .item {
+  display: inline;
+  float: left;
+  padding: 16px 0px 0 0;
+  min-width: 212px;
+  width: auto !important;
+  width: 212px;
+}
+/* line 398, ../sass/style.scss */
+.reviewsSection .reviewTab .item .item-title, .featuredDestinations .reviewTab .item .item-title {
+  display: block;
+}
+/* line 401, ../sass/style.scss */
+.reviewsSection .reviewTab .item .item-value, .featuredDestinations .reviewTab .item .item-value {
+  display: block;
+}
+
+/*Discover Section styles*/
+/* line 409, ../sass/style.scss */
+.discoverSection {
+  text-align: center;
+}
+/* line 411, ../sass/style.scss */
+.discoverSection .discovery {
+  margin-right: 26px;
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+}
+/* line 416, ../sass/style.scss */
+.discoverSection .discovery:last-of-type {
+  margin-right: 0;
+}
+@media (max-width: 484px) {
+  /* line 411, ../sass/style.scss */
+  .discoverSection .discovery {
+    margin: 4px;
+  }
+}
+/* line 422, ../sass/style.scss */
+.discoverSection .discovery span {
+  display: block;
+  clear: both;
+  float: none;
+}
+/* line 427, ../sass/style.scss */
+.discoverSection .discovery img {
+  border: 2px solid #8fa831;
+  width: 190px;
+  height: 145px;
+  overflow: hidden;
+  float: none;
+  clear: both;
+  display: inline-block;
+}
+/* line 438, ../sass/style.scss */
+.discoverSection > h4 {
+  font-weight: 700;
+  text-align: left;
+}
+
+/*Footer Styles Here*/
+/* line 445, ../sass/style.scss */
+footer {
+  margin-top: 92px;
+  padding-bottom: 8em;
+  /*Footer Social Section*/
+}
+/* line 448, ../sass/style.scss */
+footer .siteMapnSubs {
+  overflow: hidden;
+  background: #8fa831;
+  padding: 44px 15px;
+  margin-bottom: 92px;
+}
+/* line 454, ../sass/style.scss */
+footer .siteMapnSubs .siteMap ul {
+  display: inline;
+  float: left;
+  margin: 0 0 40px 0;
+  width: 160px;
+  padding-right: 20px;
+}
+/* line 460, ../sass/style.scss */
+footer .siteMapnSubs .siteMap ul li {
+  list-style: none;
+}
+/* line 465, ../sass/style.scss */
+footer .siteMapnSubs .subscriptionContainer {
+  width: auto;
+  display: inline-block;
+}
+/* line 468, ../sass/style.scss */
+footer .siteMapnSubs .subscriptionContainer h3 {
+  font-size: 1.28571em;
+  line-height: 1.33333em;
+  margin: 0 0 10px 0;
+}
+/* line 472, ../sass/style.scss */
+footer .siteMapnSubs .subscriptionContainer p {
+  margin: 0 0 10px 0;
+}
+/* line 475, ../sass/style.scss */
+footer .siteMapnSubs .subscriptionContainer button {
+  float: right;
+  font-size: 18px;
+  border-radius: 0;
+}
+/* line 480, ../sass/style.scss */
+footer .siteMapnSubs .subscriptionContainer input {
+  border-radius: 0;
+}
+/* line 487, ../sass/style.scss */
+footer .footerSocial {
+  text-align: center;
+}
+/* line 488, ../sass/style.scss */
+footer .footerSocial > h2 {
+  font-size: 2.14286em;
+  line-height: 1.2em;
+  font-weight: 700;
+}
+/* line 494, ../sass/style.scss */
+footer .footerSocial div.socialIcons ul {
+  padding: 0;
+}
+/* line 496, ../sass/style.scss */
+footer .footerSocial div.socialIcons ul li {
+  list-style: none;
+  display: inline;
 }

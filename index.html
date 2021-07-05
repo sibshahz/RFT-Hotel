@@ -5,15 +5,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Your Website title here</title>
+	<title>E Booking</title>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- JqueryUI StyleSheets -->
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.theme.css">
 	<!-- StyleSheet -->
 	<link rel="stylesheet" href="css/stylesheets/style.css">
 	<!-- Responsive fixes -->
-	<link rel="stylesheet" href="css/stylesheets/response.css">
+	<link rel="stylesheet" href="css/skdslider.css">
 	<!--[if lt IE 7]>
 	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
 	<![endif]-->
@@ -41,125 +45,930 @@
 	<![endif]-->
 </head>
 <body>
-	<header>
-		<div class="wrap">
-			<div class="container-fluid">
-				<div class="topBar">
-					
-				</div>
-				<div class="logoBar">
-					
-				</div>
-				<div class="navBar">
-					
-				</div>
-				<div class="slideContainer">
-					
-				</div>
-			</div>
-		</div>
-	</header>
-
 	<div class="wrap">
 		<div class="container-fluid">
-			<!--Deals Search Area-->
-			<div class="dealsSection">
-				
-			</div>
-
-			<!--Showcase Section-->
-			<div class="showcaseSection">
-				
-			</div>
-
-			<!--Featured Trips-->
-			<div class="featuredTrips">
-				
-			</div>
-
-			<!--Reviews Section-->
-			<div class="reviewsSection">
-				
-			</div>
-
-			<!--Featured Destinations-->
-			<div class="featuredDestinations">
-				
-			</div>
-
-			<!--Discover Section-->
-			<div class="discoverSection">
-				
-			</div>
-
-			</div><!--container fluid end-->
-	</div><!--wrap end-->
-
-	<footer>
-		<div class="wrap">
-			<div class="container-fluid">
-				<!-- Footer Content-->
-				<div class="footerContent">
-					<div class="siteMapnSubs">
-						<ul class="siteMap">
-							<li><a href="#">Countries</a></li>
-							<li><a href="#">Religion</a></li>
-							<li><a href="#">Cities</a></li>
-							<li><a href="#">Districts</a></li>
-							<li><a href="#">Airports</a></li>
-							<li><a href="#">Hotels</a></li>
-							<li><a href="#">Places of Interests</a></li>
-
-							<li><a href="#">Apartments</a></li>
-							<li><a href="#">Resorts</a></li>
-							<li><a href="#">Villas</a></li>
-							<li><a href="#">Hostels</a></li>
-							<li><a href="#">B&Bs</a></li>
-							<li><a href="#">Guest Houses</a></li>
-							<li><a href="#">Hotel Chains</a></li>
-
-							<li><a href="#">All Property Types</a></li>
-							<li><a href="#">All Themes</a></li>
-							<li><a href="#">All Destinations</a></li>
-							<li><a href="#">Reviews</a></li>
-							<li><a href="#">About E Booking.com</a></li>
-							<li><a href="#">Car Rental</a></li>
-							<li><a href="#">Villas.com</a></li>
-
-							<li><a href="#">Destination Finder</a></li>
-							<li><a href="#">FAQ</a></li>
-							<li><a href="#">Careers</a></li>
-							<li><a href="#">Terms & Conditions</a></li>
-							<li><a href="#">Privacy and Cookies</a></li>
-							<li><a href="#">Contact Us</a></li>
-							
-						</ul>
-					</div>
-
-					<div class="footerSocial">
-						<h3>E Booking.com</h3>
-						<div class="socialIcons">
-							<ul>
-								<li><a href=""><img src="#" title="Facebook" alt="Facebook"></a></li>
-								<li><a href=""><img src="#" title="Twitter" alt="Twitter"></a></li>
-								<li><a href=""><img src="#" title="Flickr" alt="Flickr"></a></li>
-								<li><a href=""><img src="#" title="LinkedIn" alt="LinkedIn"></a></li>
-								<li><a href=""><img src="#" title="Rss" alt="Rss"></a></li>
-							</ul>
+			<header>
+						<div class="topBar">
+							<div class="content-width">
+								<a href="#"><div class="task"><span class="icon icon-question"></span></div></a>
+								<a href="#"><div class="task">PKR</div></a>
+								<a href="#"><div class="task"><span class="icon icon-language"></span></div></a>
+								<a href="#"><div class="task">My List</div></a>
+								<a href="#"><div class="task"><span class="icon icon-message"></span></div></a>
+								<a href="#"><div class="task">Make changes to a booking</div></a>
+								<a href="#"><div class="task"><span class="icon icon-edit-plans"></span></div></a>
+								<a href="#"><div class="task"><span class="icon icon-signup"></span></div></a>
+								<a href="#"><div class="task">Sign in</div></a>
+							</div>
 						</div>
-						<h6 class="policyLinks"><a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a></h6>
-						<h5 class="copyright">&copy; Copyright E Booking.com. All Rights Reserved.</h5>
+						<div class="logoBar clearfix">
+							<div class="content-width">
+								<div class="logoContainer clearfix"><h1>E Booking.com</h1></div>
+								<div class="taglineContainer clearfix"><h3>We take great care of your trip</h3></div>
+							</div>
+						</div>
+						<div class="navBar">
+							<div class="content-width">
+								<ul class="mainNav clearfix">
+									<li><a href="#">Find Deals</a><span class="icon icon-down"></span></li>
+									<li><a href="#">Paces Travelers Love</a><span class="icon icon-down"></span></li>
+									<li><a href="#">Homes & Apartments</a><span class="icon icon-down"></span></li>
+									<li><a href="#">Booking.com for business</a><span class="icon icon-down"></span></li>
+									<li><a href="#">Booking.com for Phone</a><span class="icon icon-down"></span></li>
+								</ul>
+							</div>
+						</div>
+
+					<div class="slideContainer">
+							<div class="sliderWraper">
+									<ul id="mainSlider">
+										<li>
+										<img src="images/blueSlider1.jpg" />
+										<!--Slider Description example-->
+										 <div class="slideDesc">
+												<h2>London<span class="clearLeft">21555 Properties</span></h2>
+												<img src="images/BritianFlagBig.png">
+												<p>36 guests from Pakistan choose London for shopping!
+												<a href="#">Find somewhere to stay in London »</a></p>
+										  </div>
+										</li>
+
+										<li>
+										<img src="images/blueSlider2.jpg" />
+										<!--Slider Description example-->
+										 <div class="slideDesc">
+												<h2>London<span class="clearLeft">21555 Properties</span></h2>
+												<img src="images/BritianFlagBig.png">
+												<p>36 guests from Pakistan choose London for shopping!
+												<a href="#">Find somewhere to stay in London »</a></p>
+										  </div>
+										</li>
+									</ul>
+							</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+			</header>
+
+
+				<div class="content-width">
+					<!--Deals Search Area-->
+					<div class="dealsSection">
+						<div class="dealsEntry">
+							<img src="css/img/SearchIcon.png" alt="search">
+							<h2>Find The Best Deals</h2>
+							<h4>20 million rooms are at your fingertips</h4>
+						</div>
+						<form class="form-inline">
+						  <div class="form-group col-xs-12 col-sm-6">
+							    <label for="exampleInputName2">Destination/Hotel Name:</label>
+							    <input type="text" class="form-control" required="required" id="exampleInputName2" placeholder="e.g. city, region, district or specific hotel">
+						  </div>
+						  <div class="form-group form-group col-xs-12 col-sm-3">
+							    <label for="inputCheckin">Check-in Date</label>
+							    <input type="date" name="" id="inputCheckin" class="form-control" value="" placeholder="07/06/2015" required="required" title="">
+						  </div>
+						  <div class="form-group form-group col-xs-12 col-sm-3">
+							    <label for="inputCheckout">Check-out Date</label>
+							    <input type="date" name="" id="inputCheckout" class="form-control" value="" required="required" title="">
+						  </div>
+						  <div class="form-group col-xs-12 col-sm-4">
+							  	<div class="checkbox">
+							  		<label>
+							  			<input type="checkbox" value="0">
+							  			Still deciding when to go?
+							  		</label>
+							  	</div>
+						  </div>
+						  <div class="form-group col-xs-12 col-sm-4">
+							  	<div class="box">
+						  			<span>I'm travelling for: </span>
+							  		<label for="radio1">Work</label>
+						  			<input type="radio" name="travelfor" id="radio1" value="Work">
+						  			<label for="radio2">Leisure</label>
+						  			<input type="radio" name="travelfor" id="radio2" value="Leisure">
+							  	</div>
+						  </div>
+						  <div class="form-group col-xs-12 col-sm-4">
+							  		<label for="inputGuests">Guests</label>
+							  		<select name="guests" id="inputGuests" class="form-control" required="required">
+							  			<option value="">Adults,Childrens</option>
+							  			<option value="">Adults only</option>
+							  		</select>
+						  </div>
+						  <button type="submit" class="find-deals">Search</button>
+						</form>
+					</div>
+
+					<!--Showcase Section-->
+					<div class="showcaseSection row">
+						<div class="clientOffersSection col-xs-12 col-sm-6">
+							<div class="happyGuestContainer">
+								<h3>You Could Be The Next Happy Guest</h3>
+								<div class="guestLog">
+									<div class="singleLog">
+										<img src="images/happyGuestImageUK.jpg" alt="UK">
+										<div class="whoBooked">Someone from the United Kingdom</div>
+										<div class="whereBooked">just booked at <span class="bold">The Royal Horseguards</span> in London</div>
+									</div>
+									<div class="singleLog">
+										<img src="images/happyGuestImageSingapore.jpg" alt="Singapore">
+										<div class="whoBooked">Someone from the United Kingdom</div>
+										<div class="whereBooked">just booked at <span class="bold">The Royal Horseguards</span> in London</div>
+									</div><div class="singleLog">
+										<img src="images/happyGuestImageTurkey.jpg" alt="Turkey">
+										<div class="whoBooked">Someone from the United Kingdom</div>
+										<div class="whereBooked">just booked at <span class="bold">The Royal Horseguards</span> in London</div>
+									</div><div class="singleLog">
+										<img src="images/happyGuestImageBrazil.jpg" alt="Brazil">
+										<div class="whoBooked">Someone from the United Kingdom</div>
+										<div class="whereBooked">just booked at <span class="bold">The Royal Horseguards</span> in London</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="hereForYouContaianer">
+								<h3>We're Here for You - Whereever You Are</h3>
+								<div class="serviceLog">
+									<div class="singleServiceLog">
+										<div class="serviceHeading">New deals listed daily - for every budget</div>
+										<div class="serviceTagLine">No booking fees . Save money! . <span class="bold">Best Price Guaranteed</span></div>
+									</div>
+									<div class="singleServiceLog">
+										<div class="serviceHeading">813,115 properties worldwide</div>
+										<div class="serviceTagLine">Including 376,098 vacation rentals on <span class="bold">villas.com</span></div>
+										<div class="serviceTagLine">813,237 destinations in 221 counties</div>
+									</div>
+									<div class="singleServiceLog">
+										<div class="serviceHeading">New deals listed daily - for every budget</div>
+										<div class="serviceTagLine">No booking fees . Save money! . <span class="bold">Best Price Guaranteed</span></div>
+									</div>
+									<div class="singleServiceLog">
+										<div class="serviceHeading">813,115 properties worldwide</div>
+										<div class="serviceTagLine">Including 376,098 vacation rentals on <span class="bold">villas.com</span></div>
+										<div class="serviceTagLine">813,237 destinations in 221 counties</div>
+									</div>
+									<div class="singleServiceLog">
+										<div class="serviceHeading">New deals listed daily - for every budget</div>
+										<div class="serviceTagLine">No booking fees . Save money! . <span class="bold">Best Price Guaranteed</span></div>
+									</div>
+									<div class="singleServiceLog">
+										<div class="serviceHeading">813,115 properties worldwide</div>
+										<div class="serviceTagLine">Including 376,098 vacation rentals on <span class="bold">villas.com</span></div>
+										<div class="serviceTagLine">813,237 destinations in 221 counties</div>
+									</div>
+								</div>
+							</div>
+						</div><!--end clients offers section-->
+
+						<div class="destSection col-xs-12 col-sm-6">
+							<div class="destContainer">
+								<div class="cityCountry">
+									<img src="images/bangkok.jpg" alt="Bangkok">
+									<h3>Bangkok<span class="icon icon-check"></span><span class="icon icon-plan"></span></h3>
+									<h4>Thailand</h4>
+									<div class="details">
+										679 hotels, 208 apartments, 162 hostels, 108 condo hotels, 97 guest
+									</div>									
+								</div>
+								<div class="pull-right"><a href="#"><img src="css/img/rightArrow.png"></a></div>
+							</div>
+							<div class="destContainer">
+								<div class="cityCountry">
+									<img src="images/Istanbul.jpg" alt="Istanbul">
+									<h3>Istanbul<span class="icon icon-check"></span><span class="icon icon-plan"></span></h3>
+									<h4>Turkey</h4>
+									<div class="details">
+										679 hotels, 208 apartments, 162 hostels, 108 condo hotels, 97 guest
+									</div>
+								</div>
+								<div class="pull-right"><a href="#"><img src="css/img/rightArrow.png"></a></div>
+							</div>
+							<div class="destContainer">
+								<div class="cityCountry">
+									<img src="images/Paris.jpg" alt="Paris">
+									<h3>Paris<span class="icon icon-check"></span><span class="icon icon-plan"></span></h3>
+									<h4>France</h4>
+									<div class="details">
+										679 hotels, 208 apartments, 162 hostels, 108 condo hotels, 97 guest
+									</div>
+								</div>
+								<div class="pull-right"><a href="#"><img src="css/img/rightArrow.png"></a></div>
+							</div>
+							<div class="destContainer">
+								<div class="cityCountry">
+									<img src="images/NewYork.jpg" alt="New York">
+									<h3>New York<span class="icon icon-check"></span><span class="icon icon-plan"></span></h3>
+									<h4>USA</h4>
+									<div class="details">
+										679 hotels, 208 apartments, 162 hostels, 108 condo hotels, 97 guest
+									</div>
+								</div>
+								<div class="pull-right"><a href="#"><img src="css/img/rightArrow.png"></a></div>
+							</div>
+							<div class="destContainer">
+								<div class="cityCountry">
+									<img src="images/Singapore.jpg" alt="Singapore">
+									<h3>Singapore<span class="icon icon-check"></span><span class="icon icon-plan"></span></h3>
+									<h4>Singapore</h4>
+									<div class="details">
+										679 hotels, 208 apartments, 162 hostels, 108 condo hotels, 97 guest
+									</div>
+								</div>
+								<div class="pull-right"><a href="#"><img src="css/img/rightArrow.png"></a></div>
+							</div>
+							<div class="destContainer">
+								<div class="cityCountry">
+									<img src="images/Milan.jpg" alt="Milan">
+									<h3>Milan<span class="icon icon-check"></span><span class="icon icon-plan"></span></h3>
+									<h4>Italy</h4>
+									<div class="details">
+										679 hotels, 208 apartments, 162 hostels, 108 condo hotels, 97 guest
+									</div>
+								</div>
+								<div class="pull-right"><a href="#"><img src="css/img/rightArrow.png"></a></div>
+							</div>
+							<div class="destContainer">
+								<div class="cityCountry">
+									<img src="images/Frankfurt.jpg" alt="Frankfurt">
+									<h3>Frankfurt<span class="icon icon-check"></span><span class="icon icon-plan"></span></h3>
+									<h4>Germany</h4>
+									<div class="details">
+										679 hotels, 208 apartments, 162 hostels, 108 condo hotels, 97 guest
+									</div>
+								</div>
+								<div class="pull-right"><a href="#"><img src="css/img/rightArrow.png"></a></div>
+							</div>
+							<div class="destContainer">
+								<div class="cityCountry">
+									<img src="images/Toronto.jpg" alt="Toronto">
+									<h3>Toronto<span class="icon icon-check"></span><span class="icon icon-plan"></span></h3>
+									<h4>Canada</h4>
+									<div class="details">
+										679 hotels, 208 apartments, 162 hostels, 108 condo hotels, 97 guest
+									</div>
+								</div>
+								<div class="pull-right"><a href="#"><img src="css/img/rightArrow.png"></a></div>
+							</div>
+						</div><!--client destination section end-->
+					</div>
+
+					<!--Featured Trips-->
+					<div class="featuredTrips">
+						<div class="tripBackground clearfix">
+							<div class="tripHeading">
+								<h3>Want to explore popular trips?</h3>
+								<p class="tagline">Trendy Trips, the handy tool that shows you popular vacatioin itineraries from fellow eBooking.com travelers.</p>
+							</div>
+							<div class="tripsTags">
+								<p>Bangkok - Patang Beach - Pattaya <span class="bold">Most Popular</span></p>
+								<p>Mecca - Jeddah - Al Madinah</p>
+								<p>Bangkok - Patang Beach - Kuala Lumpur</p>
+								<p>Kuala Lumpur - Pantal Cenang - Genting Highlands</p>
+								<p>Mecca - Al Madinah - Dubai</p>
+							</div>
+						</div>
+					</div>
+
+					<!--Reviews Section-->
+					<div class="reviewsSection clearfix">
+						<h3>Still deciding where to stay?</h3>
+						<p>Let us make your decision easier! Our verified guest reviews help you find the perfect place.</p>
+						<div id="tabs" class="tabs clearfix">
+							<ul>
+								<li><a href="#hotelReviews">Hotel reviews:</a></li>
+								<li><a href="#bnbInnReivews">B&B & inn reviews:</a></li>
+								<li><a href="#vacationRentalReviews">Vacation rental reviews:</a></li>
+							</ul>
+							<div id="hotelReviews" class="reviewTab"><!---first tab-->
+								<div class="item">
+									<div class="item-title">Cape Town</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cape Town</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cape Town</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cape Town</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cape Town</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+
+								<div class="item">
+									<div class="item-title">Cambrills</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cambrills</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cambrills</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cambrills</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cambrills</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+
+								<div class="item">
+									<div class="item-title">Macau</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Macau</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Macau</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Macau</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Macau</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+							</div><!--end of first tab-->
+
+							<div id="bnbInnReivews" class="reviewTab"><!---second tab-->
+
+								<div class="item">
+									<div class="item-title">Macau</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Macau</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Macau</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Macau</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Macau</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+
+								<div class="item">
+									<div class="item-title">Cape Town</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cape Town</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cape Town</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cape Town</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cape Town</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+
+								<div class="item">
+									<div class="item-title">Cambrills</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cambrills</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cambrills</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cambrills</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cambrills</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+							</div><!--end of second tab-->
+
+							<div id="vacationRentalReviews" class="reviewTab"><!---third tab-->
+
+							<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+
+								<div class="item">
+									<div class="item-title">Cape Town</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cape Town</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cape Town</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cape Town</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cape Town</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+
+								<div class="item">
+									<div class="item-title">Cambrills</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cambrills</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cambrills</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cambrills</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cambrills</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+
+								<div class="item">
+									<div class="item-title">Macau</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Macau</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Macau</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Macau</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Macau</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+							</div><!--end of third tab-->
+						</div>
+					</div>
+
+					<!--Featured Destinations-->
+					<div class="featuredDestinations clearfix">
+						<h3>Destinations We Love</h3>
+						<div id="tabs" class="tabs clearfix">
+							<ul>
+								<li><a href="#regions">Regions</a></li>
+								<li><a href="#cities">Cities</a></li>
+								<li><a href="#placesOfInterest">Places of Interst</a></li>
+							</ul>
+							<div id="regions" class="reviewTab"><!---first tab-->
+								<div class="item">
+									<div class="item-title">Loch Lomand</div>
+									<div class="item-value">97 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cotswolds</div>
+									<div class="item-value">527 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">New Forest</div>
+									<div class="item-value">119 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cape Town</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cape Town</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+
+								<div class="item">
+									<div class="item-title">Cotswolds</div>
+									<div class="item-value">527 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Loch Lomand</div>
+									<div class="item-value">97 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">New Forest</div>
+									<div class="item-value">119 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cambrills</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cambrills</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+
+								<div class="item">
+									<div class="item-title">New Forest</div>
+									<div class="item-value">119 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cotswolds</div>
+									<div class="item-value">527 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Loch Lomand</div>
+									<div class="item-value">97 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Macau</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Macau</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+							</div><!--end of first tab-->
+
+							<div id="cities" class="reviewTab"><!---second tab-->
+
+								<div class="item">
+									<div class="item-title">New Forest</div>
+									<div class="item-value">119 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cotswolds</div>
+									<div class="item-value">527 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Loch Lomand</div>
+									<div class="item-value">97 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Macau</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Macau</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+
+								<div class="item">
+									<div class="item-title">Loch Lomand</div>
+									<div class="item-value">97 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cotswolds</div>
+									<div class="item-value">527 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">New Forest</div>
+									<div class="item-value">119 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cape Town</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cape Town</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+
+								<div class="item">
+									<div class="item-title">Cotswolds</div>
+									<div class="item-value">527 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Loch Lomand</div>
+									<div class="item-value">97 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">New Forest</div>
+									<div class="item-value">119 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cambrills</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cambrills</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+
+							</div><!--end of second tab-->
+
+							<div id="placesOfInterest" class="reviewTab"><!---third tab-->
+
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Miami</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+
+								<div class="item">
+									<div class="item-title">New Forest</div>
+									<div class="item-value">119 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cotswolds</div>
+									<div class="item-value">527 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Loch Lomand</div>
+									<div class="item-value">97 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Macau</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Macau</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+
+								<div class="item">
+									<div class="item-title">Loch Lomand</div>
+									<div class="item-value">97 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cotswolds</div>
+									<div class="item-value">527 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">New Forest</div>
+									<div class="item-value">119 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cape Town</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cape Town</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+
+								<div class="item">
+									<div class="item-title">Cotswolds</div>
+									<div class="item-value">527 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Loch Lomand</div>
+									<div class="item-value">97 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">New Forest</div>
+									<div class="item-value">119 properties</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cambrills</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+								<div class="item">
+									<div class="item-title">Cambrills</div>
+									<div class="item-value">Hotel Reviews: 43,166</div>
+								</div>
+
+							</div><!--end of third tab-->
+						</div>
+					</div>
+
+					<!--Discover Section-->
+					<div class="discoverSection">
+					<h4>Discover</h4>
+						<div class="discovery"><img src="images/USA.jpg" alt="USA" width="188px" height="144px"><span>USA</span></div>
+						<div class="discovery"><img src="images/Italy.jpg" alt="Italy" width="188px" height="144px"><span>Italy</span></div>
+						<div class="discovery"><img src="images/Spain.jpg" alt="Spain" width="188px" height="144px"><span>Spain</span></div>
+						<div class="discovery"><img src="images/Germany.jpg" alt="Germany" width="188px" height="144px"><span>Germany</span></div>
+						<div class="discovery"><img src="images/France.jpg" alt="France" width="188px" height="144px"><span>France</span></div>
+					</div>
+
+				</div><!--container content Width end-->
+
+			<footer>
+					<div class="content-width">
+						<!-- Footer Content-->
+						<div class="footerContent">
+							<div class="siteMapnSubs clearfix">
+							<div class="siteMapContainer col-xs-12 col-sm-6 col-md-8">
+									<ul class="siteMap">
+										<li><a href="#">Countries</a></li>
+										<li><a href="#">Religion</a></li>
+										<li><a href="#">Cities</a></li>
+										<li><a href="#">Districts</a></li>
+										<li><a href="#">Airports</a></li>
+										<li><a href="#">Hotels</a></li>
+										<li><a href="#">Places of Interests</a></li>
+
+										<li><a href="#">Apartments</a></li>
+										<li><a href="#">Resorts</a></li>
+										<li><a href="#">Villas</a></li>
+										<li><a href="#">Hostels</a></li>
+										<li><a href="#">B&Bs</a></li>
+										<li><a href="#">Guest Houses</a></li>
+										<li><a href="#">Hotel Chains</a></li>
+
+										<li><a href="#">All Property Types</a></li>
+										<li><a href="#">All Themes</a></li>
+										<li><a href="#">All Destinations</a></li>
+										<li><a href="#">Reviews</a></li>
+										<li><a href="#">About E Booking.com</a></li>
+										<li><a href="#">Car Rental</a></li>
+										<li><a href="#">Villas.com</a></li>
+
+										<li><a href="#">Destination Finder</a></li>
+										<li><a href="#">FAQ</a></li>
+										<li><a href="#">Careers</a></li>
+										<li><a href="#">Terms & Conditions</a></li>
+										<li><a href="#">Privacy and Cookies</a></li>
+										<li><a href="#">Contact Us</a></li>
+										
+									</ul>
+								</div>
+
+								<div class="subscriptionContainer clearfix col-xs-12 col-sm-6 col-md-4">
+									<form action="" method="POST" role="form">								
+										<h3>Save up to 50% off your next trip</h3>
+										<p>Secret Deals - for our subscribers only</p>
+										<input type="email" name="" placeholder="Your Email"id="input" class="form-control" value="" required="required" title="">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" value="">
+												Send me a link to get the FREE app!
+											</label>
+										</div>
+										<button type="submit" class="btn btn-primary">Subscribe</button>
+									</form>
+								</div><!---Subscription Container End-->
+							</div>
+
+							<div class="footerSocial">
+								<h2>E Booking.com</h2>
+								<div class="socialIcons">
+									<ul>
+										<li><a href=""><img src="css/img/facebook.png" title="Facebook" alt="Facebook"></a></li>
+										<li><a href=""><img src="css/img/twitter.png" title="Twitter" alt="Twitter"></a></li>
+										<li><a href=""><img src="css/img/flickr.png" title="Flickr" alt="Flickr"></a></li>
+										<li><a href=""><img src="css/img/linkedIn.png" title="LinkedIn" alt="LinkedIn"></a></li>
+										<li><a href=""><img src="css/img/rss.png" title="Rss" alt="Rss"></a></li>
+									</ul>
+								</div>
+								<h6 class="policyLinks"><a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a></h6>
+								<h5 class="copyright">&copy; Copyright E Booking.com. All Rights Reserved.</h5>
+							</div>
+						</div>
+					</div>
+			</footer>
+		</div><!--Container fluid end-->
+	</div><!--wrap end-->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="scripts/jquery-2.1.4.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
 <script src="scripts/bootstrap.min.js"></script>
 <!--  Main script file -->
+<script src="scripts/skdslider.min.js"></script>  
 <script src="scripts/scripts.js"></script>  
 </body>
 </html>

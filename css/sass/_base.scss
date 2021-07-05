@@ -1,15 +1,31 @@
-
+@import "compass/typography/vertical_rhythm";
+@import "compass/css3";
+@import "compass/utilities/general/float";
+@import "compass/utilities/general/min";
 @font-face {
   font-family: 'gothic';
-  src: url("../gothic.eot");
-  src: local("gothic"), url("../gothic.woff") format("woff"), url("../gothic.ttf") format("truetype");
+  src: url("../font/gothic.eot");
+  src: local("../font/gothic"), url("../font/gothic.woff") format("woff"), url("../font/gothic.ttf") format("truetype");
 }
 
 $blue_color:#2f6395;
 $green_color:#8fa831;
 $white_color:#ffffff;
+$golden_color:#dbd240;
 
-$max_content_width:1001px;
+$max_content_width:1110px;
 
-$line_height:24px;
-$regular_font_size:14px;
+$base-line-height:24px;
+$base-font-size:14px;
+$round-to-nearest-half-line: true;
+$rhythm-unit:'rem';
+$rem-with-px-fallback:'true';
+
+@include establish-baseline;
+
+$large_screen:'min-width: 1200px';
+$medium_screen:'min-width: 992px';
+$small_screen:'min-width: 768px';
+$verysmall_screen:'max-width: 767px';
+
+$standard_bottom_margin:80px;
